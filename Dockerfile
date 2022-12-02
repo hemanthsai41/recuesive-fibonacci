@@ -18,4 +18,5 @@ WORKDIR /app
 RUN addgroup -S fib && adduser -S fib -G fib -u 1001
 RUN chown 1001 /app
 USER 1001
-ENTRYPOINT [ "./fibonacci-api" ]
+ENTRYPOINT [ "./fibonaci-api" ]
+ENDPOINT   [ "./recursive-fibonacci" ]
