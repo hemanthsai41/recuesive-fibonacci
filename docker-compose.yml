@@ -4,6 +4,7 @@ version: '3'
 services:
   fibonacci-api:
     build: ./fibonacci-api
+    build: ./recursive-api
     image: cepe-fibonacci-api:test
     ports:
       - 8080:8080
